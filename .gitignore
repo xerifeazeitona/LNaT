@@ -1,0 +1,30 @@
+# Compiled files
+*.tfstate
+*.tfstate.*
+
+# logs
+*.log
+
+# Directories
+.terraform/
+
+# Terraform files
+*gitignore*.tf
+
+# vscode files
+.vscode/
+
+# override files
+override.tf
+override.tf.json
+*_override.tf
+*_override.tf.json
+
+# CLI configuration files
+.terraformrc
+terraform.rc
+
+# Image files
+*.img
+*.qcow2
+*.qcow2c
