@@ -1,0 +1,5 @@
+    - name: Install Bind 
+      become: yes
+      package:
+        name: bind
+        state: present

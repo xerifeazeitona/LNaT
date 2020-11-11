@@ -1,0 +1,25 @@
+    - name: Install Bash Completion
+      become: yes
+      package:
+        name: bash-completion
+        state: present
+    - name: Install VIm
+      become: yes
+      package:
+        name: vim-enhanced
+        state: present
+    - name: Install Bind Utils
+      become: yes
+      package:
+        name: bind-utils
+        state: present
+    - name: Install NetworkManager
+      become: yes
+      package:
+        name: NetworkManager
+        state: present
+    - name: Start NetworkManager, if not started
+      become: yes
+      service:
+        name: NetworkManager
+        state: started
