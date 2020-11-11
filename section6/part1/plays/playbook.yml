@@ -1,0 +1,13 @@
+- hosts: all
+  tasks:
+    - name: Install Bash Completion
+      become: yes
+      package:
+        name: bash-completion
+        state: present
+    - name: Install Bind Utils
+      become: yes
+      package:
+        name: bind-utils
+        state: present
+

@@ -1,4 +1,3 @@
-#qemu_uri = "qemu+ssh://juliano@192.168.1.108/system"
 
 #volume_pool = "kvm-pool"
 os_image_path = "../../CentOS-7-x86_64-GenericCloud.qcow2c"
