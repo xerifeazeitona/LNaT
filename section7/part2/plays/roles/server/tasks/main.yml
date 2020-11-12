@@ -1,0 +1,18 @@
+    - name: Install Packages
+      package:
+        name: "{{ item.name }}"
+        state: present
+      with_items: "{{ install_packages }}"
+
+    - name: Copy over website file
+      copy:
+        src: "{{ item.file }}"
+        dest: "{{ item.remotepath }}"
+        mode: 0755
+      with_items: "{{ website_file }}"
+
+    - name: Start Services, if not started
+      service:
+        name: "{{ item.name }}"
+        state: started
+      with_items: "{{ start_services }}"
