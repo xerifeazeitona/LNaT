@@ -1,0 +1,7 @@
+install_packages:
+  - name: bash-completion
+  - name: vim-enhanced
+  - name: firewalld
+
+start_services:
+  - name: firewalld
