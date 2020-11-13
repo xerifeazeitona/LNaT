@@ -1,0 +1,3 @@
+install_packages:
+  - name: bash-completion
+  - name: vim-enhanced
