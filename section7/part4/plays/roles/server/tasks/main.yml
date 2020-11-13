@@ -9,7 +9,7 @@
         src: "{{ item.file }}"
         dest: "{{ item.remotepath }}"
         mode: 0755
-      with_items: "{{ website_file }}"
+      with_items: "{{ copy_files }}"
 
     - name: Start Services, if not started
       service:

@@ -1,0 +1,18 @@
+install_packages:
+  - name: NetworkManager
+  - name: httpd
+  - name: iptables-services
+  - name: firewalld
+
+copy_files:
+  - file: files/index.html
+    remotepath: /var/www/html/index.html
+  - file: files/set_static_ip.sh
+    remotepath: /home/automation/set_static_ip.sh
+  - file: files/iptables
+    remotepath: /etc/sysconfig/iptables
+
+start_services:
+  - name: NetworkManager
+  - name: httpd
+  - name: iptables
