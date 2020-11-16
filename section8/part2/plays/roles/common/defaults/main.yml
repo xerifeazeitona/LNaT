@@ -1,0 +1,6 @@
+install_packages:
+  - name: bash-completion
+  - name: vim-enhanced
+  - name: tcpdump
+  - name: wireshark
+  - name: telnet
