@@ -1,0 +1,5 @@
+install_packages:
+  - name: bash-completion
+  - name: vim-enhanced
+  - name: telnet
+  - name: nmap-ncat
