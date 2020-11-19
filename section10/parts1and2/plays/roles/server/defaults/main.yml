@@ -1,0 +1,11 @@
+install_packages:
+  - name: httpd
+  - name: firewalld
+
+copy_files:
+  - file: files/index.html
+    remotepath: /var/www/html/index.html
+
+start_services:
+  - name: httpd
+  - name: firewalld
