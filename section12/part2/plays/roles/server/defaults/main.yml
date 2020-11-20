@@ -1,0 +1,7 @@
+install_packages:
+  - name: haproxy
+  - name: firewalld
+
+start_services:
+  - name: haproxy
+  - name: firewalld

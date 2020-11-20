@@ -1,0 +1,8 @@
+install_packages:
+  - name: epel-release
+  - name: nginx
+  - name: firewalld
+
+start_services:
+  - name: nginx
+  - name: firewalld
